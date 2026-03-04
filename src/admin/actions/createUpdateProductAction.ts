@@ -7,7 +7,7 @@ export const createUpdateProduct = async (productLike: Partial<Product> & { file
 
     await sleep(1500)
 
-    const { id, user, images = [], files = [], ...rest } = productLike;
+    const { id, images = [], files = [], ...rest } = productLike;
     const isCreating = id === 'new';
 
     rest.stock = Number(rest.stock || 0);
@@ -15,10 +15,9 @@ export const createUpdateProduct = async (productLike: Partial<Product> & { file
 
     if (files.length > 0) {
         const newImagesNames = await uploadFiles(files);
-        console.log({ newImagesNames })
         images.push(...newImagesNames);
     }
-    console.log({ images })
+
     const imagesToSave = images.map((image) => {
         if (image.includes('http')) {
             return image.split('/').pop() || '';

@@ -39,7 +39,7 @@ export const useProducts = () => {
             minPrice = 150;
             maxPrice = 200;
             break;
-        case '150-200':
+        case '200+':
             minPrice = 200;
             maxPrice = undefined;
             break;

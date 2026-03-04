@@ -41,10 +41,10 @@ export const AdminSidebar: React.FC<SidebarProps> = ({ isCollapsed, onToggle }) 
     return to === pathname;
   }
 
-  const getInitials = (fullname: string) => {
-    const splitName = fullname.split(' ');
-    return splitName[0].slice(0, 1).toUpperCase().concat(splitName[1].slice(0, 1).toUpperCase())
-  }
+  // const getInitials = (fullname: string) => {
+  //   const splitName = fullname.split(' ');
+  //   return splitName[0].slice(0, 1).toUpperCase().concat(splitName[1].slice(0, 1).toUpperCase())
+  // }
 
   return (
     <div className={`min-h-screen bg-white border-r border-gray-200 transition-all duration-300 ease-in-out ${isCollapsed ? 'w-20' : 'w-64'

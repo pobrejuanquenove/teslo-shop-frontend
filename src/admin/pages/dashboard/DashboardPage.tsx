@@ -4,7 +4,7 @@ import Chart from '@/admin/components/Chart';
 import QuickActions from '@/admin/components/QuickActions';
 import StatCard from '@/admin/components/StatCard';
 import { BarChart3, DollarSign, Eye, ShoppingCart, TrendingUp, Users } from 'lucide-react';
-import React from 'react'
+
 const stats = [
     {
         title: 'Total Users',

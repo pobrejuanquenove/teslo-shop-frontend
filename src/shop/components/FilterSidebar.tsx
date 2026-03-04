@@ -30,12 +30,6 @@ export const FilterSidebar = () => {
         { id: "xxl", label: "XXL" },
     ];
 
-    const colors = [
-        { id: "black", label: "Negro", color: "bg-black" },
-        { id: "white", label: "Blanco", color: "bg-white border" },
-        { id: "grey", label: "Gris", color: "bg-gray-400" },
-        { id: "navy", label: "Azul Marino", color: "bg-blue-900" },
-    ];
 
     return (
         <div className="w-64 space-y-6">

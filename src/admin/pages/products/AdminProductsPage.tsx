@@ -7,8 +7,6 @@ import { PencilIcon, PlusIcon } from 'lucide-react'
 import { Link } from 'react-router'
 import type { Product } from '@/interfaces/product.interface'
 import { currencyFormatter } from '../../../lib/currencyFormater';
-import { useProduct } from '@/admin/hooks/useProduct'
-
 
 export const AdminProductsPage = () => {
     const { data } = useProducts();

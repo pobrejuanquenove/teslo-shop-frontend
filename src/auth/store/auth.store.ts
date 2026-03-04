@@ -35,6 +35,7 @@ export const useAuthStore = create<AuthState>()((set, get) => ({
             return true;
 
         } catch (error) {
+            console.log(error)
             set({ user: null, token: null, authStatus: 'not-authenticated' });
             localStorage.removeItem('token')
             return false;
@@ -53,6 +54,7 @@ export const useAuthStore = create<AuthState>()((set, get) => ({
             return true;
 
         } catch (error) {
+            console.log(error)
             set({ user: null, token: null, authStatus: 'not-authenticated' });
         }
         return false;

@@ -39,9 +39,6 @@ export const AdminProductPage = () => {
             ? 'Aquí puedes crear un nuevo producto.'
             : 'Aquí puedes editar el producto.';
 
-
-    const availableSizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'];
-
     if (isError) return <Navigate to='/admin/products' />
     if (isLoading) return <CustomFullScreenLoading />
     if (!product) return <Navigate to='/admin/products' />

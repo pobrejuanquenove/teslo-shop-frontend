@@ -36,7 +36,9 @@ export const ProductForm = ({ title, subtitle, product, onSubmit, isPosting }: P
     }, [product])
 
     // se usa watch para ver la data del form ya que getValues no re-renderiza
+    // eslint-disable-next-line react-hooks/incompatible-library
     const selectedSizes = watch('sizes');
+
     const selectedTags = watch('tags');
     const currentStock = watch('stock');
 
