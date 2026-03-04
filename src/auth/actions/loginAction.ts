@@ -1,7 +1,7 @@
 import { tesloApi } from "@/api/tesloApi"
 import type { AuthResponse } from "../interfaces/auth.respomse";
 
-export const loginAction = async (email: string, password: string): Promise<AuthResponse | undefined> => {
+export const loginAction = async (email: string, password: string): Promise<AuthResponse> => {
     try {
 
         const { data } = await tesloApi.post<AuthResponse>('/auth/login', {
@@ -12,6 +12,6 @@ export const loginAction = async (email: string, password: string): Promise<Auth
 
         return data;
     } catch (error) {
-        console.log(error)
+        if (error) console.log(error)
     }
 }
