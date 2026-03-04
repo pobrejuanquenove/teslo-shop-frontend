@@ -1,5 +1,4 @@
 import { CustomLogo } from '@/components/custom/CustomLogo'
-import React from 'react'
 
 export const CustomFooter = () => {
     return (

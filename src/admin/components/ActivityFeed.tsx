@@ -1,4 +1,3 @@
-import React from 'react';
 import { User, ShoppingCart, FileText, Bell } from 'lucide-react';
 
 const ActivityFeed: React.FC = () => {

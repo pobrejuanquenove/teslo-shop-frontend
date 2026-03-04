@@ -1,5 +1,5 @@
 import { useAuthStore } from '@/auth/store/auth.store'
-import React, { type PropsWithChildren } from 'react'
+import { type PropsWithChildren } from 'react'
 import { Navigate } from 'react-router';
 
 
